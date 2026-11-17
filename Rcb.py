@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filters
 import google.generativeai as genai
 
-genai.configure(api_key='')
+genai.configure('')
 model = genai.GenerativeModel('gemini-pro')
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
